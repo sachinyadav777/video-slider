@@ -1,7 +1,10 @@
 let item = document.getElementsByClassName("slide")[0]
 item.addEventListener("mousemove", move)
+item.addEventListener("touchmove", move)
 item.addEventListener("mousedown", dragdown)
+item.addEventListener("touchstart", dragdown)
 item.addEventListener("mouseup", dragup)
+item.addEventListener("touchend", dragup)
 let down = false
 let prevpage
 let prevscroll
@@ -12,7 +15,7 @@ function move(e) {
     }
     else {
 
-        let position = e.pageX - prevpage
+        let position = (e.pageX || e.touches[0].pageX)  - prevpage
         // console.log(position)
         item.scrollLeft = prevscroll - position;
     }
@@ -20,7 +23,7 @@ function move(e) {
 }
 function dragdown(e) {
     down = true
-    prevpage = e.pageX
+    prevpage = e.pageX || e.touches[0].pageX;
     prevscroll = item.scrollLeft
 }
 function dragup() {
