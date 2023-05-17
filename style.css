@@ -159,18 +159,19 @@
 @media screen and (max-width: 600px) {
     .page-5-box{
         padding: 140px 85px;
+        grid-template-columns: 13% auto 13%;
     }
     .icon{
         height: 40vh;
         font-size: 15px;
     }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .page-5-box{
-        padding: 120px 25px;
-        grid-template-columns: 12% auto 12%;
+        padding: 175px 25px;
+        
     }
     .icon{
-        height: 50vh;
+        height: 30vh;
     }
 }
