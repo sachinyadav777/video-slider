@@ -158,10 +158,10 @@
 }
 @media screen and (max-width: 600px) {
     .page-5-box{
-        padding: 80px 25px;
+        padding: 140px 85px;
     }
     .icon{
-       
+        height: 40vh;
         font-size: 15px;
     }
 }
