@@ -16,7 +16,6 @@ function move(e) {
     else {
 
         let position = (e.pageX || e.touches[0].pageX)  - prevpage
-        // console.log(position)
         item.scrollLeft = prevscroll - position;
     }
 
