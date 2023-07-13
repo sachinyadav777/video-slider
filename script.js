@@ -36,7 +36,8 @@ function dragup() {
 
 let icon = document.getElementsByClassName("icon");
 firstImg = item.getElementsByClassName("slide-box")[0];
-let srcremove = document.getElementsByClassName("responsive-iframe")
+// let srcremove = document.querySelectorAll("source")
+ let srcremove = document.getElementsByClassName("responsive-iframe");
 let srcopen = srcremove[0].src;
 console.log(srcopen)
 let currentActive = 0;
